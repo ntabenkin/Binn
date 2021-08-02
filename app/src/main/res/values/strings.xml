@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Binn</string>
+
+    <string name="email">email %s </string>
+    <string name="password">password %s </string>
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="location_supported">
+        <item>Ma</item>
+        <item>NH</item>
+        <item>CA</item>
+        <item>NJ</item>
+        <item>NYC</item>
+        <item>PA</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+</resources>
