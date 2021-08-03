@@ -46,13 +46,12 @@ class RegisterActivity : AppCompatActivity() {
             }
             binding.register.setOnClickListener {
                 val user = User(
-                    binding.email.text.toString(),
-                    binding.password.text.toString(),
-                    binding.userName.text.toString(),
-                    binding.binAmount.text.toString(),
-                    // binding.value.text.toString()
+                  binding.toString(),
+                    binding.toString(),
+                   33
                 )
                 val intent = Intent(this, MainActivity::class.java)
+
                 intent.putExtra("user", user)
                 startActivity(intent)
                 finish()

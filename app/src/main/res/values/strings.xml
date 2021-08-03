@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">Binn</string>
 
-    <string name="email">email %s </string>
-    <string name="password">password %s </string>
+
     <string name="selected_item">Selected item:</string>
 
     <string-array name="location_supported">
@@ -15,5 +14,48 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
+
+    <string name="color">Red</string>
+
+
+    <string name="red">Red</string>
+    <string name="pink">Pink</string>
+    <string name="indigo">Indigo</string>
+    <string name="green">Green</string>
+    <string name="lightgreen">Light Green</string>
+    <string name="orange">Orange</string>
+    <string name="deeporange">Deep Orange</string>
+    <string name="blue">Blue</string>
+    <string name="cyan">Cyan</string>
+    <string name="lightblue">Light Blue</string>
+    <string name="lime">Lime</string>
+    <string name="yellow">Yellow</string>
+    <string name="grey">Grey</string>
+    <string name="bluegrey">Blue Grey</string>
+    <string name="amber">Amber</string>
+    <string name="teal">Teal</string>
+    <string name="deeppurple">Deep Purple</string>
+    <string name="purple">Purple</string>
+    <string name="brown">Brown</string>
+
+    <string name="md_red_500">#F44336</string>
+    <string name="md_pink_500">#E91E63</string>
+    <string name="md_purple_500">#9C27B0</string>
+    <string name="md_deep_purple_500">#673AB7</string>
+    <string name="md_indigo_500">#3F51B5</string>
+    <string name="md_blue_500">#2196F3</string>
+    <string name="md_light_blue_500">#03A9F4</string>
+    <string name="md_cyan_500">#00BCD4</string>
+    <string name="md_teal_500">#009688</string>
+    <string name="md_green_500">#4CAF50</string>
+    <string name="md_light_green_500">#8BC34A</string>
+    <string name="md_lime_500">#CDDC39</string>
+    <string name="md_yellow_500">#FFEB3B</string>
+    <string name="md_amber_500">#FFC107</string>
+    <string name="md_orange_500">#FF9800</string>
+    <string name="md_deep_orange_500">#FF5722</string>
+    <string name="md_brown_500">#795548</string>
+    <string name="md_grey_500">#9E9E9E</string>
+    <string name="md_blue_grey_500">#607D8B</string>
 
 </resources>
