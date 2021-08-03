@@ -1,5 +1,6 @@
 package com.ntabenkin.binn.userdetails
 
+import android.animation.ObjectAnimator
 import android.content.Context
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
@@ -62,6 +63,12 @@ class UserDetailsFragment : Fragment() {
         binding.circleView.setOnClickListener{
             binding.img.setVisibility(View.INVISIBLE)
             Toast.makeText(requireContext(), "You Clicked Button", Toast.LENGTH_SHORT).show()
+
+
+            ObjectAnimator.ofFloat(view, "translationX", 140f).apply {
+                duration = 2000
+                start()
+            }
         }
 
         binding.textView.text = color?.name.toString()
