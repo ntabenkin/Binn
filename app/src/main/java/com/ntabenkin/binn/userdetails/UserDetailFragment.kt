@@ -2,11 +2,14 @@ package com.ntabenkin.binn.userdetails
 
 import android.animation.ObjectAnimator
 import android.content.Context
+import android.graphics.Path
 import android.graphics.drawable.GradientDrawable
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.PathInterpolator
 import android.widget.Toast
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
@@ -53,7 +56,12 @@ class UserDetailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.button.setOnClickListener {
-            listener.navigateBack()
+            //listener.navigateBack()
+            ObjectAnimator.ofFloat(view, "translationX", -140f).apply {
+                duration = 2000
+                start()
+            }
+
         }
 
 
@@ -61,14 +69,15 @@ class UserDetailsFragment : Fragment() {
         color?.let { gradientDrawable.setColor(it.value) }
 
         binding.circleView.setOnClickListener{
-            binding.img.setVisibility(View.INVISIBLE)
+           // binding.img.setVisibility(View.INVISIBLE)
             Toast.makeText(requireContext(), "You Clicked Button", Toast.LENGTH_SHORT).show()
-
 
             ObjectAnimator.ofFloat(view, "translationX", 140f).apply {
                 duration = 2000
                 start()
+
             }
+
         }
 
         binding.textView.text = color?.name.toString()

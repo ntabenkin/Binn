@@ -69,6 +69,13 @@ class UserFragment : Fragment() {
     private fun initUsers() {
         Users.add(
             User(
+                "UserBin #1331",
+                resources.getString(R.string.md_red_500),
+                resources.getColor(R.color.md_red_500)
+            )
+        )
+        Users.add(
+            User(
                 getString(R.string.red),
                 resources.getString(R.string.md_red_500),
                 resources.getColor(R.color.md_red_500)
